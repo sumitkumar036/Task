@@ -19,7 +19,7 @@ pipeline {
                 echo "Generating Build"
                 script
                 {
-                    bat '"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.16f1\\Editor\\Unity.exe" -quit -batchmode -projectPath "C:\\All Unity Data\\Projects\\HP" -executeMethod GenerateBuild.SimpleBuild'
+                    bat '"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.16f1\\Editor\\Unity.exe" -quit -batchmode -projectPath "C:\ProgramData\Jenkins\node\workspace\Task" -executeMethod GenerateBuild.SimpleBuild'
                 }
             }
         }
