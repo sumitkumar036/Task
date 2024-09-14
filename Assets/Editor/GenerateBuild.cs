@@ -14,7 +14,7 @@ public class GenerateBuild
     }
 
     [MenuItem("Build_Pipeline/SimpleBuild")]
-    public static void SimpleBuid()
+    public static void SimpleBuild()
     {
         Pipeline();
     }
