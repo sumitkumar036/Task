@@ -5,19 +5,19 @@ using System.IO;
 
 public class GenerateBuild
 {
-    [MenuItem("Build_Pipeline/BuildWithAppSigningKey")]
-    public static void BuildWithAppSigningKey()
-    {
-
-        AppSigning("123456");
-        Pipeline();
-    }
-
-    [MenuItem("Build_Pipeline/SimpleBuild")]
+    [MenuItem("Build_Pipeline/1. SimpleBuild")]
     public static void SimpleBuild()
     {
         Pipeline();
     }
+
+    [MenuItem("Build_Pipeline/2. AppStoreBuild")]
+    public static void AppStoreBuild()
+    {
+        AppSigning("123456");
+        Pipeline();
+    }
+
 
     #region PIPELINE CODE
     private static void Pipeline()
